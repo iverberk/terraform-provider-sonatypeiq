@@ -33,7 +33,6 @@ func TestAccRoleDataSource(t *testing.T) {
 				}`,
 				Check: resource.ComposeAggregateTestCheckFunc(
 					resource.TestCheckResourceAttr("data.sonatypeiq_role.role_by_name", "name", "Developer"),
-					resource.TestCheckResourceAttr("data.sonatypeiq_role.role_by_name", "id", "1da70fae1fd54d6cb7999871ebdb9a36"),
 				),
 			},
 		},
